@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <extension version="3" type="template">
+         <name>lemon</name>
+         <creationDate>2015-10-09</creationDate>
+         <author>2Dit</author>
+         <authorEmail>mail@2dit.ru</authorEmail>
+         <authorUrl>http://2dit.ru</authorUrl>
+         <copyright>2Dit Ltd. 2015</copyright>
+         <license>GNU/GPL 2 or Later</license>
+         <version>1.0.0</version>
+         <description>TMPL_LEMON_DESC</description>
+         <files>
+                 <filename>index.php</filename>
+                 <filename>templateDetails.xml</filename>
+                 <folder>images</folder>
+                 <folder>css</folder>
+                 <folder>html</folder>
+                 <folder>language</folder>
+         </files>
+         <languages folder="language">
+            <language tag="ru-RU">ru-RU/ru-RU.tpl_lemon.ini</language>
+            <language tag="ru-RU">ru-RU/ru-RU.tpl_lemon.sys.ini</language>
+            <language tag="en-GB">en-GB/en-GB.tpl_lemon.ini</language>
+            <language tag="en-GB">en-GB/en-GB.tpl_lemon.sys.ini</language>
+         </languages> 
+         <positions>
+                 <position>pos-1</position>
+                 <position>pos-2</position>
+                 <position>pos-3</position>
+                 <position>pos-4</position>
+                 <position>pos-5</position>
+                 <position>pos-6</position>
+                 <position>pos-7</position>
+                 <position>pos-8</position>
+                 <position>pos-9</position>
+                 <position>pos-10</position>
+                 <position>pos-11</position>
+                 <position>pos-12</position>
+                 <position>pos-13</position>
+                 <position>pos-14</position>
+                 <position>pos-15</position>
+                 <position>pos-16</position>
+                 <position>pos-17</position>
+                 <position>pos-18</position>
+                 <position>pos-19</position>
+                 <position>pos-20</position>
+                 <position>pos-21</position>
+                 <position>pos-22</position>
+                 <position>pos-23</position>
+                 <position>footer</position>
+                  <position>footer-left</position>
+                   <position>footer-right</position>
+         </positions>
+ </extension>

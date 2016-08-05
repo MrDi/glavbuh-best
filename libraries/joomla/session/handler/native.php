@@ -152,6 +152,7 @@ class JSessionHandlerNative implements JSessionHandlerInterface
 		// Workaround for https://bugs.php.net/bug.php?id=61470 as suggested by David Grudl
 		session_write_close();
 		$this->closed = true;
+
 		if (isset($_SESSION))
 		{
 			$backup = $_SESSION;

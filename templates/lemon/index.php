@@ -118,7 +118,43 @@ $doc->addStyleSheet('/templates/lemon/css/bootstrap.min.css');
     </footer>
 	 <!-- jQuery -->
     
-
+<div id="modal" class="contact content-section no-bottom-pad hidden">
+<div class="container">
+<div class="row text-center">
+<div class="col-md-12">
+<h2>Связаться с нами</h2>
+<!-- <h3 class="caption gray">Feel free to get in touch with us if you have a new project or simply something awesome</h3>--></div>
+<!-- /.col-md-12 --></div>
+<!-- /.row --></div>
+<!-- /.container -->
+<div class="container">
+<div class="row form-container">
+<div class="col-md-8 contact-form">
+<h3>Заполните поля контактной формы</h3>
+<form id="contactForm" class="ajax-form" action="php/contact.php" method="post">
+<div class="form-group"><input id="name" class="form-control" name="name" required="" type="text" value="" placeholder="Имя..." /></div>
+<div class="form-group"><input id="email" class="form-control" name="email" required="" type="email" value="" placeholder="Email..." /></div>
+<div class="form-group"><input id="phone" class="form-control" name="phone" required="" type="phone" value="" placeholder="Контактный телефон..." /></div>
+<div class="form-group"><textarea class="form-control" name="message" required="" rows="4" placeholder="Ваше сообщение"></textarea></div>
+<div class="form-group"><button class="btn btn-default" name="submit" type="submit"><i class="fa fa-paper-plane fa-fw"></i> Отправить</button></div>
+</form></div>
+<!-- /.contact-form -->
+<div class="col-md-4 contact-address">
+<h3>Наш адрес</h3>
+<p>г. Омск, 644043, ул. Фрунзе, 1 <br />к. 3 (ост. Рабиновича)</p>
+<p><a href="mailto:glavbuh@glavbuh-best">glavbuh@glavbuh-best@.ru</a></p>
+<p>тел./факс:<br /><span class="phone_contact">(3812) 90-50-83<br />33-70-03</span></p>
+<div class="info_text tel-fax block">
+<div class="tel"><span class="blue">тел./факс:<br /></span> <span class="blue">(3812)</span> 90-50-83</div>
+<div class="fax"><span class="blue">(3812)</span> 33-70-05</div>
+</div>
+</div>
+<!-- /.contact-address --></div>
+<!-- /.row --></div>
+<!-- /.container --></div>
+   
+    <div class="ok" style="display:none;">Ваша заявка получена!</div>
+   
     <!-- Bootstrap Core JavaScript -->
     <script src="/templates/lemon/js/bootstrap.min.js"></script>
 
@@ -138,5 +174,6 @@ $doc->addStyleSheet('/templates/lemon/css/bootstrap.min.css');
 
     <!-- Custom JavaScript -->
     <script src="/templates/lemon/js/hallooou.js"></script>
+    <script src="/templates/lemon/js/validate.js"></script>
 </body>
 </html>

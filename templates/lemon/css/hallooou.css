@@ -115,6 +115,10 @@
         color: white;
 
     }
+.log{
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
 
     .phone.col-lg-6.col-md-6.col-sm-6.col-xs-12 {
         padding: 0;
@@ -236,7 +240,7 @@ h3.margin-top20 {
 }
 .gray_back.block {
     height: 817px;
-        margin-bottom: 88px;
+        margin-bottom: 103px;
 }
 
 
@@ -1570,6 +1574,7 @@ span.dinamic_price {
 
 
     .team-member figure:hover figcaption{
+        display: none;
         visibility: visible;
         color: #fff;
         background: rgba(36, 64, 144, 0.84); /* Primary color, can be changed via colors.css */

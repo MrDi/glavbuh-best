@@ -1,4 +1,16 @@
+@media(max-width:1360px) {
+    
+     div#modal.show_modal{
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -moz-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+}
+
 @media(max-width:1199px) {
+   
        .navbar-custom .button_container span {
             background: #fff;
         }
@@ -33,10 +45,12 @@
     .block.full.block_two {
         height: 1175px;
 }
-    .close_modal {
+.close_modal {
+  
+    top: 10px;
+    right: 10px;
    
-    top: -34px;
-    right: 0;
+    background: url('/templates/lemon/images/icon/button_close_black.svg');
    
 }
     
@@ -165,6 +179,13 @@
  
     padding: 35px 34px;
 }
+    
+    nav.overlay-menu .back_nav.show_back_nav {
+    display: block;
+        margin: 11px auto;
+}
+  
+    
     
         ul.left_ul,ul.right_ul {
     /*    height: initial;*/
@@ -372,6 +393,9 @@
         padding-bottom: 20px;
         border-bottom: 1px solid #E4E4E4;
     }
+
+    
+ 
 
     }
 

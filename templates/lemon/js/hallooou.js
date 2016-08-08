@@ -25,14 +25,34 @@ jQuery(document).ready(function(){
     
     
     
-    jQuery(document).on('click','.modal_btn', function(e){
+    jQuery(document).on('click','.modal_btn,.button_service,.btn_click_blue', function(e){
+        
+       jQuery('.button_service a').attr('href','javascript:void(0);'); 
        jQuery('div#modal').addClass('show_modal'); 
        jQuery('.modal_back_close').addClass('show_modal_close'); 
+       
+       
+        
+       if(jQuery('.white_back.tabs').hasClass('show')){
+            jQuery('body').addClass('ov_hid'); 
+        jQuery("#form2 .price").remove(); 
+        jQuery("#form2 .blue_text").detach(); 
+         jQuery("div#modal h3").html('Заявка');   
+        jQuery(".price").clone().insertAfter(jQuery(".form-group:nth-child(4)"));
+        jQuery("<div class='blue_text'>Рассчет стоимости услуг для вас составил:</div>").insertBefore(jQuery("#form2 .price"));
+           
+       }
+        else{
+             jQuery('body').removeClass('ov_hid'); 
+           jQuery("#form2 .price").remove();
+           jQuery("#form2 .blue_text").detach(); 
+        }
         
     }); 
     
     
      jQuery(document).on('click','.close_modal,.modal_back_close.show_modal_close', function(e){
+         jQuery('body').removeClass('ov_hid'); 
        jQuery('div#modal').removeClass('show_modal'); 
        jQuery('.modal_back_close').removeClass('show_modal_close'); 
         
@@ -287,6 +307,7 @@ jQuery('.toggle').click(function() {
     if (jQuery('#overlay.open')) {
         jQuery(this).toggleClass('active');
         jQuery('#overlay').toggleClass('open');
+        jQuery('.back_nav').addClass('show_back_nav');
     }
 });
 
@@ -295,6 +316,7 @@ jQuery('a.ux-menu-link-level-0.ux-menu-link-parent').click(function() {
         jQuery(this).toggleClass('active_menu');
         jQuery('#overlay').toggleClass('show_level2');
         jQuery('.back_nav').addClass('show_back_nav');
+        
     }
 });
 
@@ -453,13 +475,13 @@ jQuery(function() {
 jQuery(function() {
 
     //set your google maps parameters
-    var latitude = 40.7412541,
-        longitude = -74.0040725,
-        map_zoom = 14;
+    var latitude = 54.993788,
+        longitude = 73.354743,
+        map_zoom = 17;
 
     //google map custom marker icon - .png fallback for IE11
     var is_internetExplorer11 = navigator.userAgent.toLowerCase().indexOf('trident') > -1;
-    var marker_url = (is_internetExplorer11) ? 'assets/images/cd-icon-location.png' : 'assets/images/cd-icon-location.svg';
+    var marker_url = (is_internetExplorer11) ? '/templates/lemon/images/icon/cd-icon-location.png' : '/templates/lemon/images/icon/cd-icon-location.svg';
 
     //define the basic color of your map, plus a value for saturation and brightness
     var main_color = '#2d313f',

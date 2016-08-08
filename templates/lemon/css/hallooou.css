@@ -94,6 +94,7 @@
         font-size: 50px;
     }
 
+
     .left-center-phone {
         text-align: center;
 
@@ -147,7 +148,12 @@
         font-weight: 300;
         color: #999; /* Can be changed via colors.css */
         background-color: #eeeeee;
+        
     }
+body.ov_hid{
+    overflow: hidden;
+}
+
 a.btn.dropdown-toggle {
     display: none;
 }
@@ -338,7 +344,7 @@ h3.margin-top20 {
     }
 
     .buffer-forty-top{
-        margin-top: 40px;
+       
     }
 
     .no-bottom-pad{
@@ -922,13 +928,30 @@ textarea.form-control {
     z-index: 8;
     cursor: pointer;
 }
+.blue_text {
+    color: #244090;
+    text-align: center;
+    /* margin-top: 20px; */
+    margin: 10px 0;
+    margin-top: 22px;
+    font-size: 18px;
+}
+
+button#feed_button2 {
+    background: #244090;
+}
+#form2 .price {
+    color: #244090;
+    text-align: center;
+    margin: 10px 0;
+}
 .close_modal {
     position: absolute;
     top: -31px;
     right: -31px;
     font-size: 27px;
     cursor: pointer;
-    background: url('/templates/lemon/images/icon/button_close.svg');
+    background: url('/templates/lemon/images/icon/button_close_white.svg');
     width: 25px;
     height: 25px;
     background-size: cover;
@@ -976,6 +999,7 @@ div#modal {
     align-content: center;
         z-index: 8;
     display: none;
+    overflow: auto;
 }
 
 div#modal.show_modal{
@@ -2326,7 +2350,7 @@ span.dinamic_price {
       width: 32px;
       cursor: pointer;
       margin-left: 10px;
-      background-color: rgba(254,82,76, 0.9); /* Primary color, can be changed via colors.css */
+  background-color: rgb(36, 64, 144); /* Primary color, can be changed via colors.css */
       background-repeat: no-repeat;
       background-size: 32px 64px;
       background-image: url("../images/cd-icon-controller.svg");
@@ -3272,16 +3296,44 @@ p.dakr_blue,span.dakr_blue {
         background: white;
         padding: 0px 25px;
     }
+#connect .col-md-8.contact-form {
+    margin: 0 auto;
+    float: none;
+        padding: 30px 0;
+}
+div#connect {
+    background: #eeeeee;
+}
 
-    nav.overlay-menu .back_nav {
-        width: 37px;
-        height: 37px;
-        background: url(http://freeiconbox.com/icon/256/35724.png);
-        margin: 0 auto;
-        background-size: cover;
-        display: none;
-    }
+div#connect .col-md-8.contact-form >h2,div#connect .col-md-8.contact-form >h3,div#connect .col-md-8.contact-form >p{
+    text-align: center;
+        margin: 0;
+}
+div#connect .col-md-8.contact-form >p{
+    margin-bottom: 30px;
+}
 
+div#connect .col-md-8.contact-form >h3{
+    
+    margin-bottom: 20px;
+}
+   nav.overlay-menu .back_nav {
+    width: 37px;
+    height: 37px;
+    background: url(http://freeiconbox.com/icon/256/35724.png);
+    margin: 0 auto;
+    background: url('/templates/lemon/images/icon/next_w.svg');
+    background-size: cover;
+    display: none;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+.logo_menu a {
+    width: 25vh;
+    display: block;
+    margin: 0 auto;
+}
     nav.overlay-menu .back_nav.show_back_nav {
         display: none;
     }

@@ -33,6 +33,14 @@
     .block.full.block_two {
         height: 1175px;
 }
+    .close_modal {
+   
+    top: -34px;
+    right: 0;
+   
+}
+    
+    
     }
 
 @media(max-width:767px) {

@@ -81,7 +81,7 @@ jQuery(".my_feed_button").click(function(e){
             dataType: "html", //“ип данных
             data: jQuery("#form"+click_id).serialize(), 
             success:function(html){
-                alert(html);
+             
              jQuery("#form"+click_id+" .name").val("");
              jQuery("#form"+click_id+" .email").val("");
              jQuery("textarea").val("");

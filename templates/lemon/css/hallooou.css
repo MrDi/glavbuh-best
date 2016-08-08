@@ -885,6 +885,15 @@ p.price_download + .gray_back {
 textarea.form-control {
     height: 180px;
 }
+#modal textarea.form-control.message {
+    height: 100px;
+}
+#modal .contact-form .form-group input {
+    height: 41px;
+}
+#modal .form-group {
+    margin-bottom: 2px;
+}
 .ok {
     display: none;
     position: fixed;
@@ -902,6 +911,79 @@ textarea.form-control {
     z-index: 99999;
     background: rgb(36, 65, 145);
     padding: 4vw 9vw;
+}
+.modal_back_close.show_modal_close {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(23, 23, 23, 0.18);
+    z-index: 8;
+    cursor: pointer;
+}
+.close_modal {
+    position: absolute;
+    top: -31px;
+    right: -31px;
+    font-size: 27px;
+    cursor: pointer;
+    background: url('/templates/lemon/images/icon/button_close.svg');
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    opacity: 0.3;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+.close_modal:hover {
+    opacity: 0.7;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+#modal .col-md-8.contact-form {
+    margin: 0 auto;
+    float: none;
+    background: white;
+    padding-bottom: 10px;
+    padding: 43px;
+        z-index: 10;
+}
+
+div#modal {
+    
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.74);
+    left: 0;
+    height: 100vh;
+     
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+        z-index: 8;
+    display: none;
+}
+
+div#modal.show_modal{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
 }
     .carousel-caption .intro-text{
         padding: 0;

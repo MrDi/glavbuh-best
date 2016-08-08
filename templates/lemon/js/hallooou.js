@@ -23,6 +23,22 @@ jQuery(document).ready(function(){
       
   });  
     
+    
+    
+    jQuery(document).on('click','.modal_btn', function(e){
+       jQuery('div#modal').addClass('show_modal'); 
+       jQuery('.modal_back_close').addClass('show_modal_close'); 
+        
+    }); 
+    
+    
+     jQuery(document).on('click','.close_modal,.modal_back_close.show_modal_close', function(e){
+       jQuery('div#modal').removeClass('show_modal'); 
+       jQuery('.modal_back_close').removeClass('show_modal_close'); 
+        
+    }); 
+    
+    
   jQuery(document).on('click','.show .checkbox_switch', function(e){
     summ2 =0;
     var id_click = e.target.id;
